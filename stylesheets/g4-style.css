@@ -68,6 +68,14 @@ article{
 .align-left p, .align-right p{
 	padding: 0 10px;	
 }
+p strong a{
+	padding: 0px 3px;
+    margin: 3px;
+    background-color: #E1EAFF;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
 .services-block{
 	width: 50%;
 	float: left;
