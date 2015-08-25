@@ -69,7 +69,7 @@ var options = {
 
 gulp.task('sass', function () {
   gulp.src(paths.scss.src)
-    .pipe(sass({outputStyle: 'expand'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(gulp.dest(paths.css.dest));
 });
  

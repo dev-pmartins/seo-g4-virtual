@@ -1,0 +1,389 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+body {
+  margin: 0; }
+
+* {
+  -webkit-transition: 500ms all ease;
+  -moz-transition: 500ms all ease;
+  -o-transition: 500ms all ease;
+  transition: 500ms all ease;
+  outline: none; }
+
+.row {
+  display: block;
+  margin: 30px 0; }
+
+section {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 20px 0; }
+
+section:nth-child(even) {
+  background-color: #fff; }
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: red; }
+
+.h1 {
+  font-size: 30px;
+  color: #000; }
+
+.h2 {
+  color: #3c3c3c; }
+
+.h3 {
+  color: #5a5a5a; }
+
+.h4 {
+  color: #5a5a5a; }
+
+.h5 {
+  color: #5a5a5a; }
+
+.h6 {
+  color: #5a5a5a; }
+
+.h1:before {
+  content: '  ';
+  background: red;
+  display: inline-block;
+  width: 5px;
+  height: 100%; }
+
+.italic {
+  font-style: italic; }
+
+.underline {
+  text-decoration: underline; }
+
+.strong {
+  font-weight: bold; }
+
+.input-1 {
+  padding: 10px;
+  border: 0;
+  width: 30%;
+  border-left: 3px solid #70D8FF;
+  outline: none; }
+
+.input-1:focus {
+  background: #e3f4ff; }
+
+.input-1.invalid {
+  border-left: 5px solid #db574d; }
+
+.input-1.invalid:focus {
+  border-left: 3px solid #70D8FF; }
+
+.btn-1 {
+  padding: 10px;
+  border: 0px;
+  text-transform: uppercase;
+  background: #8ed4ff;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+  margin: 0 100px;
+  display: inline-block; }
+
+.btn-1:hover {
+  background: #24C3FF;
+  -webkit-box-shadow: 0px 0px 10px -2px #8a8a8a;
+  -moz-box-shadow: 0px 0px 10px -2px #8a8a8a;
+  box-shadow: 0px 0px 10px -2px #8a8a8a; }
+
+.btn-1.strong {
+  background: #ff6060; }
+
+.btn-1.strong:hover {
+  background: #FF2626; }
+
+.btn-1.confirm {
+  background: #8DC87A; }
+
+.btn-1.confirm:hover {
+  background: #73E74E; }
+
+.btn-1.light {
+  background: #B2BDC3; }
+
+.btn-1.light:hover {
+  background: #A8A8A8; }
+
+.textarea {
+  border: 1px solid #70D8FF;
+  border-left: 3px solid #70D8FF;
+  width: 30%;
+  padding: 10px;
+  color: #89BCCF; }
+
+.textarea:focus {
+  color: #595D5F; }
+
+.list li {
+  list-style-type: none;
+  margin: 5px;
+  color: #00B9FF;
+  font-family: monospace;
+  font-size: 14px; }
+
+.list li:before {
+  content: '•';
+  color: #00B9FF;
+  margin-top: 50%;
+  padding: 0 5px; }
+
+.list-nav li {
+  list-style-type: none;
+  margin: 15px 0px; }
+
+.list-nav li a {
+  color: #fff;
+  background: #8ed4ff;
+  padding: 5px 50px;
+  text-decoration: none;
+  font-weight: bolder;
+  border-left: 3px solid #3EC2F4; }
+
+.list-nav li a:hover {
+  background: #3EC2F4; }
+
+.textformat {
+  padding: 30px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 22px;
+  color: #7d7d7d;
+  margin: 0 50px; }
+
+.textformat.highlight {
+  padding-left: 25px;
+  border-left: 3px solid #70D8FF;
+  background: #EDFAFF;
+  color: black; }
+
+.simple-link {
+  font-style: italic;
+  text-decoration: none;
+  padding: 0px 0px;
+  color: #00b9ff; }
+
+.strong-link {
+  font-style: italic;
+  text-decoration: none;
+  padding: 0px 0px;
+  color: #007fff;
+  font-weight: bolder; }
+
+.block-link {
+  padding: 5px;
+  background: #3EC2F4;
+  color: #fff;
+  text-decoration: none; }
+
+.panel {
+  background-color: #F9F9F9;
+  border: 1px solid #40caff;
+  color: #6b6b6b;
+  display: inline-block;
+  width: 50%;
+  padding: 10px 20px;
+  text-align: left;
+  -webkit-box-shadow: inset 10px 10px 20px -20px #b0b0b0;
+  -moz-box-shadow: inset 10px 10px 20px -20px #b0b0b0;
+  box-shadow: inset 10px 10px 20px -20px #b0b0b0; }
+
+.panel.highlight {
+  border: 0;
+  color: #fff;
+  background: #40CAFF; }
+
+.panel.hideaway {
+  border: 0;
+  opacity: 0.65;
+  background: #ACD0DE; }
+
+.panel.hideaway:hover {
+  opacity: 1; }
+
+.icons-block {
+  padding: 15px;
+  background-color: #70D8FF;
+  display: inline-block; }
+
+.icons-block:hover {
+  background-color: #40CAFF; }
+
+hr {
+  opacity: 0.3;
+  width: 90%; }
+
+.padding-5 {
+  padding: 5px; }
+
+.padding-10 {
+  padding: 10px; }
+
+.padding-15 {
+  padding: 15px; }
+
+.padding-20 {
+  padding: 20px; }
+
+.padding-25 {
+  padding: 25px; }
+
+.padding-30 {
+  padding: 30px; }
+
+.margin-y-5 {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.margin-y-10 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.margin-y-15 {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.margin-y-20 {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.margin-y-25 {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.margin-y-30 {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+/* Css a parte */
+.icon-git {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(http://cdns2.freepik.com/fotos-gratis/coracao-dos-namorados_318-8477.jpg);
+  background-size: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  width: 100%; }
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 10px 0; }
+
+h1, h2, h3, h4, h5, h6, .top-nav-iten {
+  font-family: 'Lato', sans-serif; }
+
+h2 {
+  margin: 20px 0; }
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 15px 15px; }
+
+.row {
+  margin: 10px 0;
+  display: flex; }
+
+header {
+  width: 100%;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
+  display: flex; }
+
+article {
+  display: inline-block;
+  margin: 10px 0;
+  width: 100%; }
+
+.image-header {
+  display: block;
+  float: left;
+  width: 14%; }
+
+.top-nav {
+  display: table;
+  table-layout: fixed;
+  float: left;
+  width: 86%; }
+
+.top-nav ul {
+  display: table-row; }
+
+.top-nav-iten {
+  display: table-cell;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 0; }
+
+.align-left {
+  width: 50%;
+  float: left; }
+
+.align-right {
+  width: 50%;
+  float: right; }
+
+.align-left p, .align-right p {
+  padding: 0 10px; }
+
+p strong a {
+  padding: 0px 3px;
+  margin: 3px;
+  background-color: #E1EAFF;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none; }
+
+.services-block {
+  width: 50%;
+  float: left;
+  margin: 10px 0; }
+
+.footer {
+  background: #F3F3F3;
+  display: flex; }
+
+.footer-info {
+  line-height: 30px;
+  padding: 20px 0; }
+
+.footer .container {
+  width: 1020px !important; }
+
+.c50 {
+  width: 50%;
+  float: left;
+  display: block; }
+
+.c-blue {
+  color: #09214F;
+  font-weight: 700; }
+
+.c-red {
+  color: #EC2C14;
+  font-weight: 700; }
+
+.c-green {
+  color: #2A681D;
+  font-weight: 700; }
+
+.c-yellow {
+  color: #DFCC31;
+  font-weight: 700; }
