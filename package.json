@@ -1,12 +1,12 @@
 {
-  "name": "gulp projetc",
-  "version": "1.0.0",
-  "description": "para projetos simples",
+  "name": "",
+  "version": "",
+  "description": "G4 Virtual Trabalho",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Lucas Gaspar",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.0",
