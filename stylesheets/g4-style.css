@@ -24,6 +24,7 @@ h2{
 }
 .row{
 	margin: 10px 0;
+	display: flex;
 }
 header{
 	width: 100%;
