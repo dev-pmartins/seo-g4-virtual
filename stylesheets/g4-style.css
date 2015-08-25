@@ -20,7 +20,7 @@ h2{
 .container{
 	max-width: 1020px;
 	margin: 0 auto;
-	padding: 15px 0;
+	padding: 15px 15px;
 }
 .row{
 	margin: 10px 0;
