@@ -510,7 +510,7 @@ body {
 
 body article {
   background-color: #ffffff;
-  padding: 0 10px 0 10px;
+  padding: 50px 10px 0 10px;
 }
 
 body h2 {
@@ -542,6 +542,8 @@ body input {
 
 body header {
   background-color: #295995;
+  position: fixed;
+  top: 0;
 }
 
 body header .top-nav .top-nav-iten a {
