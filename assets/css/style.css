@@ -27,7 +27,7 @@ h2 {
 .container {
   max-width: 1020px;
   margin: 0 auto;
-  padding: 5px 15px;
+  padding: 5px 15px 0 15px;
 }
 
 .row {
@@ -532,12 +532,52 @@ body .services-block {
 }
 
 body textarea {
-  resize: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  width: 90%;
+  height: 200px;
   background-color: #ededed;
+  resize: none;
 }
 
 body input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  width: 90%;
+  height: 30px;
   background-color: #ededed;
+}
+
+body input:nth-child(3) {
+  background-color: lightgray;
+  color: black;
+  width: 200px;
+}
+
+body ::-webkit-input-placeholder {
+  padding-left: 5px;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+body :-moz-placeholder {
+  /* Firefox 18- */
+  padding-left: 5px;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+body ::-moz-placeholder {
+  /* Firefox 19+ */
+  padding-left: 5px;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+body :-ms-input-placeholder {
+  padding-left: 5px;
+  font-size: 12px;
+  font-family: Arial;
 }
 
 body header {

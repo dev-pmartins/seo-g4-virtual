@@ -23,11 +23,48 @@ body{
 		padding: 10px;
 	}
 	textarea{
-		resize:none;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		margin: 10px; 
+		width: 90%;
+		height: 200px;
 		background-color: $gray;
+		resize:none;
 	}
 	input{
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		margin: 10px; 
+		width: 90%;
+		height: 30px;
 		background-color: $gray;
+	}
+	input:nth-child(3){
+		background-color: darken($gray, 10);
+		color: black;
+		width: 200px;
+	}
+
+	::-webkit-input-placeholder {
+	  padding-left: 5px;
+	  font-size: 12px;
+	  font-family: Arial;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	  padding-left: 5px;
+	  font-size: 12px;
+	  font-family: Arial;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	  padding-left: 5px;
+	  font-size: 12px;
+	  font-family: Arial;  
+	}
+
+	:-ms-input-placeholder {  
+	  padding-left: 5px;
+	  font-size: 12px;
+	  font-family: Arial;  
 	}
 
 	header{
