@@ -1,0 +1,14 @@
+// Exemplo básico como se trabalhar com o sass (scss).
+
+$gray : darken(#f7f7f7, 4);
+
+body{
+	textarea{
+		resize:none;
+		background-color: $gray;
+	}
+	input{
+		background-color: $gray;
+	}
+}
+
