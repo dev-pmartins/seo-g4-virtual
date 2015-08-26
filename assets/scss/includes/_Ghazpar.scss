@@ -1,8 +1,27 @@
 // Exemplo básico como se trabalhar com o sass (scss).
 
 $gray : darken(#f7f7f7, 4);
+$blue : lighten(#152e4d, 18);
 
 body{
+	background-color: $gray;
+	article{
+		background-color: #ffffff;
+		padding: 0 10px 0 10px;
+	}
+	h2{
+		font-size: 22px;
+	}
+	h3{
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.services-block{
+		background-color: #ffffff;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		box-sizing: border-box;
+		padding: 10px;
+	}
 	textarea{
 		resize:none;
 		background-color: $gray;
@@ -10,5 +29,26 @@ body{
 	input{
 		background-color: $gray;
 	}
+
+	header{
+		background-color: $blue;
+		.top-nav{
+			.top-nav-iten{
+				a{
+					text-decoration: none;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+
+	footer{
+		background-color: $blue;
+		section{
+			color: #ffffff;
+			background-color: $blue;
+		}
+	}
+
 }
 

@@ -20,7 +20,7 @@ h2{
 .container{
 	max-width: 1020px;
 	margin: 0 auto;
-	padding: 15px 15px;
+	padding: 5px 15px;
 }
 .row{
 	margin: 10px 0;
@@ -33,7 +33,6 @@ header{
 }
 article{
 	display: inline-block;
-    margin: 10px 0;
     width: 100%;
 }
 .image-header{
@@ -68,13 +67,35 @@ article{
 .align-left p, .align-right p{
 	padding: 0 10px;	
 }
-p strong a{
-	padding: 0px 3px;
-    margin: 3px;
-    background-color: #E1EAFF;
-    text-transform: uppercase;
-    color: #000;
-    text-decoration: none;
+p{
+	strong:nth-child(4) a{
+	    padding: 0px 3px;
+	    margin: 3px;
+	    color: lighten(#09214f, 5);
+	    text-transform: uppercase;
+	    text-decoration: none;
+	}
+	strong:nth-child(5) a{
+	    padding: 0px 3px;
+	    margin: 3px;
+	    color: darken(#ec2c14, 20);
+	    text-transform: uppercase;
+	    text-decoration: none;
+	}
+	strong:nth-child(6) a{
+	    padding: 0px 3px;
+	    margin: 3px;
+	    color: darken(#2a681d, 12);
+	    text-transform: uppercase;
+	    text-decoration: none;
+	}
+	strong:nth-child(7) a{
+	    padding: 0px 3px;
+	    margin: 3px;
+	    color: darken(#dfcc31, 10);
+	    text-transform: uppercase;
+	    text-decoration: none;
+	}
 }
 .services-block{
 	width: 50%;
@@ -82,7 +103,6 @@ p strong a{
     margin: 10px 0;
 }
 .footer{
-	background: #F3F3F3;
     display: flex;
 }
 .footer-info{
@@ -98,18 +118,18 @@ p strong a{
 	display: block;
 }
 .c-blue{
-	color: #09214F;
+	color: lighten(#09214f, 5);
 	font-weight: 700;
 }
 .c-red{
-	color: #EC2C14;
+	color: darken(#ec2c14, 20);
 	font-weight: 700;
 }
 .c-green{
-	color: #2A681D;
+	color: darken(#2a681d, 12);
 	font-weight: 700;
 }
 .c-yellow{
-	color: #DFCC31;
+	color: darken(#dfcc31, 10);
 	font-weight: 700;
 }

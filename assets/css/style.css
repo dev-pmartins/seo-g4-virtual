@@ -27,7 +27,7 @@ h2 {
 .container {
   max-width: 1020px;
   margin: 0 auto;
-  padding: 15px 15px;
+  padding: 5px 15px;
 }
 
 .row {
@@ -53,7 +53,6 @@ header {
 
 article {
   display: inline-block;
-  margin: 10px 0;
   width: 100%;
 }
 
@@ -96,12 +95,35 @@ article {
   padding: 0 10px;
 }
 
-p strong a {
+p strong:nth-child(4) a {
   padding: 0px 3px;
   margin: 3px;
-  background-color: #E1EAFF;
+  color: #0c2b66;
   text-transform: uppercase;
-  color: #000;
+  text-decoration: none;
+}
+
+p strong:nth-child(5) a {
+  padding: 0px 3px;
+  margin: 3px;
+  color: #8e1a0c;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+p strong:nth-child(6) a {
+  padding: 0px 3px;
+  margin: 3px;
+  color: #173810;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+p strong:nth-child(7) a {
+  padding: 0px 3px;
+  margin: 3px;
+  color: #bfae1e;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -112,7 +134,6 @@ p strong a {
 }
 
 .footer {
-  background: #F3F3F3;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -136,35 +157,27 @@ p strong a {
 }
 
 .c-blue {
-  color: #09214F;
+  color: #0c2b66;
   font-weight: 700;
 }
 
 .c-red {
-  color: #EC2C14;
+  color: #8e1a0c;
   font-weight: 700;
 }
 
 .c-green {
-  color: #2A681D;
+  color: #173810;
   font-weight: 700;
 }
 
 .c-yellow {
-  color: #DFCC31;
+  color: #bfae1e;
   font-weight: 700;
 }
 
 body {
   margin: 0;
-}
-
-* {
-  -webkit-transition: 500ms all ease;
-  -moz-transition: 500ms all ease;
-  -o-transition: 500ms all ease;
-  transition: 500ms all ease;
-  outline: none;
 }
 
 .row {
@@ -491,6 +504,33 @@ hr {
   background-size: 100%;
 }
 
+body {
+  background-color: #ededed;
+}
+
+body article {
+  background-color: #ffffff;
+  padding: 0 10px 0 10px;
+}
+
+body h2 {
+  font-size: 22px;
+}
+
+body h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+body .services-block {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
 body textarea {
   resize: none;
   background-color: #ededed;
@@ -498,4 +538,22 @@ body textarea {
 
 body input {
   background-color: #ededed;
+}
+
+body header {
+  background-color: #295995;
+}
+
+body header .top-nav .top-nav-iten a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body footer {
+  background-color: #295995;
+}
+
+body footer section {
+  color: #ffffff;
+  background-color: #295995;
 }
