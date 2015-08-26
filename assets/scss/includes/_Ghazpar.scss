@@ -4,7 +4,14 @@ $gray : darken(#f7f7f7, 4);
 $blue : lighten(#152e4d, 18);
 
 body{
+
 	background-color: $gray;
+	
+	p{
+		font-size: 12px;
+		color: darken($gray, 50);
+	}
+
 	article{
 		background-color: #ffffff;
 		padding: 50px 10px 0 10px;
@@ -86,6 +93,9 @@ body{
 		section{
 			color: #ffffff;
 			background-color: $blue;
+		}
+		p{
+			color: #ffffff;
 		}
 	}
 
