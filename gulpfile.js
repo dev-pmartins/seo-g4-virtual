@@ -11,57 +11,68 @@ var imageop = require('gulp-image-optimization');
 // Diretorios e arquivos
 var paths = {
 
-	scss : {
+    scss : {
 
-		src : 'assets/scss/**/*.scss',
-		dest : 'assets/scss/',
+        src : 'assets/scss/**/*.scss',
+        dest : 'assets/scss/',
 
-	},
+    },
 
-	css : {
+    css : {
 
-		src : 'assets/css/**/*.css',
-		dest : 'assets/css/',
+        src : 'assets/css/**/*.css',
+        dest : 'assets/css/',
 
-	},
+    },
 
-	js 	: {
+    js  : {
 
-		src : 'assets/js/**/*.js',
-		dest : 'assets/js/',
+        src : 'assets/js/**/*.js',
+        dest : 'assets/js/',
 
-	},
+    },
 
-	images : {
+    min  : {
 
-		src : ['assets/images/**/*.png','assets/images/**/*.jpg','assets/images/**/*.gif','assets/images/**/*.jpeg'],
-		dest : 'assets/images/',
+        dest : 'assets/min/',
+    },
 
-	},
+    concat  : {
 
-	// icons : {
+        src : 'assets/concat/**/*.js',
+        dest : 'assets/concat/',
+    },
 
-	// 	src : 'assets/icons/',
-	// 	dest : 'assets/icons/'
+    images : {
 
-	// }	
+        src : ['assets/images/**/*.png','assets/images/**/*.jpg','assets/images/**/*.gif','assets/images/**/*.jpeg'],
+        dest : 'assets/images/',
+
+    },
+
+    // icons : {
+
+    //  src : 'assets/icons/',
+    //  dest : 'assets/icons/'
+
+    // }    
 
 };
 
 // Organização de tasks
 var options = {
 
-	build : { 
-	
-		tasks 	: 	['minify-css', 'images', 'uglify']
-	
-	},
-	
-	watch : {
-	
-		tasks 	: 	['sass:watch', 'css:watch']
-	
-	},
+    build : { 
+    
+        tasks   :   ['minify-css', 'images', 'uglify']
+    
+    },
+    
+    watch : {
+    
+        tasks   :   ['sass:watch', 'css:watch']
+    
+    },
 
 };
 
@@ -76,14 +87,14 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
   gulp.watch(paths.scss.src, ['sass']);
 });
-	
+    
 gulp.task('minify-css', function() {
   return gulp.src(paths.css.src)
     .pipe(sourcemaps.init())
     .pipe(minifyCss())
     .pipe(sourcemaps.write('./'))
     .pipe(rename('style-minify.css'))
-    .pipe(gulp.dest(paths.css.dest));
+    .pipe(gulp.dest(paths.min.dest));
 });
 
 gulp.task('images', function(cb) {
@@ -96,24 +107,29 @@ gulp.task('images', function(cb) {
     .pipe(gulp.dest(paths.images.dest)).on('end', cb).on('error', cb);
 });
 
+gulp.task('concat', function() {
+  return gulp.src(paths.js.src)
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest(paths.concat.dest));
+});
+
 gulp.task('uglify', function(){
-    return gulp.src(paths.js.src)
+    return gulp.src(paths.concat.src)
         .pipe(sourcemaps.init())
-        .pipe(concat('all.js'))
-        .pipe(gulp.dest(paths.js.dest))
-        .pipe(rename('uglify.js'))
+        .pipe(rename('scripts-min.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(paths.js.dest));
+        .pipe(gulp.dest(paths.min.dest));
 });
+
 
 gulp.task('autoprefixer', function() {
     return gulp.src(paths.css.src)
-    	.pipe(autoprefixer({
-    	    browsers: ['last 2 versions', '> 0%'], //'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'
-    	    cascade: false
-    	}))
-    	.pipe(gulp.dest(paths.css.dest));
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', '> 0%'], //'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'
+            cascade: false
+        }))
+        .pipe(gulp.dest(paths.css.dest));
 });
 
 gulp.task('css:watch', function() {
