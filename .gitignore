@@ -1,1 +1,8 @@
+node_modules/**/
+assets/concat/**/
+assets/js/**/
+assets/css/**/
+assets/scss/**/
+assets/min/**/*.map
+
 
