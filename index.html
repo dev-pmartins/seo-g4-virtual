@@ -7,7 +7,7 @@
     <meta name="keywords" content="ERP, SAP, MMQ, CFTV, Escritório Virtual, Service Desk">
     <title>G4 Virtual - Serviços em tecnologia</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/g4-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,17 +22,17 @@
         </h1>
         <nav class="top-nav">
           <ul>
-            <li class="top-nav-iten">HOME</li>
-            <li class="top-nav-iten">EMPRESA</li>
-            <li class="top-nav-iten">SOLUÇÕES</li>
-            <li class="top-nav-iten">CLIENTES</li>
-            <li class="top-nav-iten">CONTATO</li>
+            <li class="top-nav-iten"><a href="">HOME</a></li>
+            <li class="top-nav-iten"><a href="#historia">EMPRESA</a></li>
+            <li class="top-nav-iten"><a href="">SOLUÇÕES</a></li>
+            <li class="top-nav-iten"><a href="">CLIENTES</a></li>
+            <li class="top-nav-iten"><a href="">CONTATO</a></li>
           </ul> 
         </nav>
       </div>
     </header>
 
-    <section class="container">
+    <div class="container">
 
       <article>
         <h2>G4 Virtual e suas <strong>diversas soluções em tecnologia</strong>.</h2>
@@ -40,13 +40,13 @@
 
         <div class="row">
 	        <section class="services-block" id="escritorio-virtual">
-	          <h3 class="c-blue">ESCRITÓRIO VIRTUAL</h3>
+	          <h3 class="c-blue">escritório virtual</h3>
 	          <h4 class="c-blue">Hosting</h4>
 	          <p>A virtualização de arquivos do Servidor da empresa, onde o cliente tem <strong>acesso ao Escritório Virtual em qualquer lugar que tenha conexão com a Internet.</strong></p>
 	        </section>
 
 	        <section class="services-block" id="service-desk">
-	          <h3 class="c-red">SERVICE DESK</h3>
+	          <h3 class="c-red">service desk</h3>
 	          <h4 class="c-red">HD/FS</h4>
 	          <p>Analistas treinados e capacitados para avaliar e tomar ações rápidas para solução dos problemas. Qualidade e velocidade no atendimento.</p>
 	        </section>
@@ -54,13 +54,13 @@
 
         <div class="row">
 	        <section class="services-block" id="erp">
-	          <h3 class="c-green">ERP</h3>
+	          <h3 class="c-green">erp</h3>
 	          <h4 class="c-green">SAP/MMQ/SV</h4>
 	          <p>Representamos os <strong>melhores softwares ERP</strong> do mercado, promovendo a racionalização e integração dos processos de negócios.</p>
 	        </section>
 
 	        <section class="services-block" id="cftv">
-	          <h3 class="c-yellow">CFTV</h3>
+	          <h3 class="c-yellow">cftv</h3>
 	          <h4 class="c-yellow">Segurança</h4>
 	          <p>As nossas soluções em CFTV, permitem ao cliente <strong>acesso local e remoto ao circuito de câmeras instalado no cliente</strong>.</p>
 	        </section>
@@ -68,7 +68,7 @@
       </article>
 
       <article>
-        <h2>Historia e valores da empresa</h2>
+        <h2 id="historia">Historia e valores da empresa</h2>
         <div class="align-left">
           <p>A G4 Virtual Tecnologia atua desde 1988 no segmento de TI (Tecnologia da Informação), proporcionando soluções diferenciadas.Com forte vocação para o mercado de atendimento, nossos técnicos são experts em serviços de atendimento de help desk e service desk.</p>
           <p>Nosso quadro de recursos é constantemente aperfeiçoado com treinamento, palestras e suporte para auto-estudo nas mas diversas áreas necessárias a plena execução dos nossos contratos de serviços.</p>
@@ -87,24 +87,19 @@
       </article>
 
       <article>
-        <div class="c50">
+        <form action="">
           <h2>Contato</h2>
           <div class="align-left">
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" placeholder="Nome" />
+            <input type="text" name="email" id="email" placeholder="Email" />
+            <input type="submit"></button>
           </div>
           <div class="align-right">
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" />
+            <textarea placeholder="Mensagem" rows="5" cols="10"></textarea>
           </div>
-          <textarea></textarea>
-          <input type="submit" value="Submit">
-        </div>
-        <div class="c50">
-          <h2>xablau</h2>
         </div>
       </article>
-    </section>
+    </form>
 
     <footer class="footer">
       <section class="container">
