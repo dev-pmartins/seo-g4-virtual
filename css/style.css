@@ -3,3 +3,10 @@
   Folha de estilo customizada
 
 */
+.padding-35-y{
+  padding: 35px 0;
+}
+.site-footer{
+  padding-top: 10px;
+  background-color: #F8F8F8;
+}
