@@ -15,3 +15,11 @@
   color: rgb(33, 150, 243);
   font-size: 27px;
 }
+
+.menu-tab{
+	background-color: rgb(17, 38, 64);
+}
+
+.menu-tab li a{
+	color: #C8C0C0;
+}
