@@ -3,6 +3,14 @@
   Folha de estilo customizada
 
 */
+
+h1{
+	display: inline-block;
+}
+.ul-service-home{
+	text-decoration: none;
+	list-style: none;
+}
 .padding-35-y{
   padding: 35px 0;
 }
@@ -16,10 +24,17 @@
   font-size: 27px;
 }
 
-.menu-tab{
+/*.menu-tab{
 	background-color: rgb(17, 38, 64);
+}*/
+.menu-tab ul{
+	display: inline-block;
 }
 
-.menu-tab li a{
+/*.menu-tab li a{
 	color: #C8C0C0;
+}
+*/
+.menu-tab img{
+	float: left;
 }
