@@ -28,17 +28,21 @@ h2{
   font-size: 27px;
 }
 
-/*.menu-tab{
+header{
 	background-color: rgb(17, 38, 64);
-}*/
+}
 .menu-tab ul{
 	display: inline-block;
 }
 
-/*.menu-tab li a{
+.menu-tab li a{
 	color: #C8C0C0;
 }
-*/
+
 .menu-tab img{
 	float: left;
+}
+
+article{
+	margin: 45px 0;
 }
