@@ -29,14 +29,14 @@ h2{
 }
 
 header{
-	background-color: rgb(17, 38, 64);
+	background-color: rgba(187, 187, 187, 0.31);
 }
 .menu-tab ul{
 	display: inline-block;
 }
 
 .menu-tab li a{
-	color: #C8C0C0;
+	color: #6F6F6F;
 }
 
 .menu-tab img{
