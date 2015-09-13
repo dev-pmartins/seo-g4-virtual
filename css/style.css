@@ -39,6 +39,10 @@ header{
 	color: #6F6F6F;
 }
 
+.menu-tab li{
+	height: 100px;
+}
+
 .menu-tab img{
 	float: left;
 }
