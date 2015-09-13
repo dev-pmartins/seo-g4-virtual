@@ -7,6 +7,10 @@
 h1{
 	display: inline-block;
 }
+
+h2{
+	font-size: 20px;
+}
 .ul-service-home{
 	text-decoration: none;
 	list-style: none;
