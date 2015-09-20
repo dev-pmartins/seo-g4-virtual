@@ -65,6 +65,12 @@ article{
 	margin-top: 60px;
 }
 
+
+.redes-sociais{
+  margin-top: 20px;
+}
+
+
 /*resets menu bootstrap*/
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
