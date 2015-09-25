@@ -316,13 +316,13 @@
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+
     <script type="text/javascript" language="JavaScript">
 		$(document).ready(function() {
   			$(window).scroll(function (event) {
 			    var scroll = $(window).scrollTop();
 			    if (scroll > 0) {
-			    	$('.header')[0].addClass('header-scrolling');
+			    	$('.header').addClass('header-scrolling');
 			    	console.log(scroll);
 			    };
 			});
