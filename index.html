@@ -7,20 +7,20 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap-paper-theme.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" language="JavaScript">
+		$(document).ready(function() {
+  			$(window).scroll(function (event) {
+			    var scroll = $(window).scrollTop();
+			    if (scroll > 0) {
+			    	$('.header')[0].addClass('header-scrolling');
+			    	console.log(scroll);
+			    };
+			});
+		});
+	</script>
     <style type="text/css">html, body{overflow-x: hidden;}</style>
   </head>
   <body>
-  		<script type="text/javascript" language="JavaScript">
-  			$( document ).ready(function() {
-	  			$(window).scroll(function (event) {
-				    var scroll = $(window).scrollTop();
-				    if (scroll > 0) {
-				    	$('.header')[0].addClass('header-scrolling');
-				    	console.log(scroll);
-				    };
-				});
-			});
-  		</script>
 		<header class="header">
 			<div class="row">
 				<div class="container container-menu">
