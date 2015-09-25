@@ -41,6 +41,7 @@ header{
 }
 .menu-tab{
 	padding: 0 50px;
+  margin-top: 8px;
 }
 .menu-tab ul{
 	display: inline-block;
