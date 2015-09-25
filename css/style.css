@@ -51,7 +51,6 @@ header{
 }
 
 .menu-tab li{
-	height: 100px;
   font-size: 14px;
 }
 
@@ -77,7 +76,7 @@ article{
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
     border: none;
-    color: red;
+    color: #70AB19;
     -webkit-box-shadow: initial;
     -moz-box-shadow: initial;
     box-shadow: initial;
@@ -85,7 +84,7 @@ article{
 
 .nav-tabs > li > a:hover, .nav-tabs > li > a:focus:hover {
     border: none;
-    color: blue;
+    color: #34747C;
     -webkit-box-shadow: initial;
     -moz-box-shadow: initial;
     box-shadow: initial;
