@@ -48,6 +48,7 @@ header{
 
 .menu-tab li a{
 	color: #6F6F6F;
+  margin: 0;
 }
 
 .menu-tab li{
