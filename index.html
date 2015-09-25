@@ -11,12 +11,15 @@
   </head>
   <body>
   		<script type="text/javascript">
-  			$(window).scroll(function (event) {
-			    var scroll = $(window).scrollTop();
-			    if (scroll > 0) {
-			    	$('.header')[0].addClass('header-scrolling');
-			    };
-			});
+  			$( document ).ready(function() {
+	  			$(window).scroll(function (event) {
+				    var scroll = $(window).scrollTop();
+				    if (scroll > 0) {
+				    	$('.header')[0].addClass('header-scrolling');
+				    	console.log(scroll);
+				    };
+				});
+			}
   		</script>
 		<header class="header">
 			<div class="row">
