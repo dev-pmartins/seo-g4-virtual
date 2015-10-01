@@ -84,6 +84,9 @@ article{
   margin-top: 20px;
 }
 
+.form-horizontal{
+  margin-top: 20px;
+}
 
 /*resets menu bootstrap*/
 
@@ -130,5 +133,21 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
  }
 
  .bx-viewport{
-  height: 600px!important;
+  height: 480px!important;
  }
+
+ .bx-wrapper .bx-controls-direction a {
+     top: 108%;
+ } 
+
+.bx-wrapper .bx-controls-direction a:nth-child(1) {
+    left: 25%; 
+  } 
+
+.bx-wrapper .bx-controls-direction a:nth-child(2) {
+     right: 25%; 
+  }
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: -50px;
+  }
