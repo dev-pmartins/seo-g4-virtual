@@ -1,0 +1,2 @@
+$(document).ready(function(){$(window).scroll(function(e){var l=$(window).scrollTop();l>0?($(".header").addClass("header-scrolling"),console.log(l)):0==l&&$(".header").removeClass("header-scrolling")}),$(".click-event").click(function(e){$(".nav-tabs li:nth-child(3) a").trigger("click")}),$(document).ready(function(){$(".bxslider").bxSlider({auto:!0,speed:500,"default":!1})})});
+//# sourceMappingURL=scripts-min.js.map

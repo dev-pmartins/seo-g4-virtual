@@ -171,3 +171,7 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
  .bx-wrapper .bx-controls-direction a {
      display: none;
  } 
+.spacer{
+  margin-bottom: 140px;
+
+}
