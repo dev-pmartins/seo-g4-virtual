@@ -17,6 +17,12 @@ h2{
 }
 h3{
 	font-size: 20px;
+  color: #34747C;
+  line-height: 44px;
+}
+h4{
+  font-size: 18px;
+  color: #34747C;
 }
 p{
   padding: 0!important;
@@ -71,6 +77,11 @@ header{
 	float: left;
 
 }
+
+.destaques-home p {
+  width: 90%;
+}
+
 article{
 	margin: 25px 0;
 }
@@ -108,6 +119,7 @@ article{
     -moz-box-shadow: initial;
     box-shadow: initial;
     margin: 0;
+    list-style: none;
 }
 
 .nav-tabs > li > a:hover, .nav-tabs > li > a:focus:hover {
@@ -122,6 +134,10 @@ article{
     border: none;
     color: #acc786;
     margin: 0;
+}
+
+.nav-tabs li {
+  list-style: none!important;
 }
 textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
     -webkit-box-shadow: inset 0 -2px 0 #abc0c7;
@@ -141,10 +157,15 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
 
  .slider{
   margin-top: 30px;
+ } 
+
+ .slider ul li{
+  list-style: none!important;
  }
 
  .bx-viewport{
   height: 480px!important;
+  min-height: 600px!important;
  }
 
  .bx-wrapper .bx-controls-direction a {
