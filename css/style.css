@@ -69,6 +69,7 @@ header{
 
 .menu-tab img{
 	float: left;
+
 }
 article{
 	margin: 25px 0;
@@ -77,11 +78,21 @@ article{
 .site-footer{
 	border-top: 1px solid #d4d4d4;
 	margin-top: 60px;
+  padding-bottom: 20px;
+}
+
+.site-footer figure{
+  margin-top: 20px;
 }
 
 
 .redes-sociais{
   margin-top: 20px;
+}
+.redes-sociais i{
+    float: left;
+    margin: 0 9%;
+    margin-top: 35px;
 }
 
 .form-horizontal{
@@ -137,17 +148,5 @@ textarea:focus, textarea.form-control:focus, input.form-control:focus, input[typ
  }
 
  .bx-wrapper .bx-controls-direction a {
-     top: 108%;
+     display: none;
  } 
-
-.bx-wrapper .bx-controls-direction a:nth-child(1) {
-    left: 25%; 
-  } 
-
-.bx-wrapper .bx-controls-direction a:nth-child(2) {
-     right: 25%; 
-  }
-
-.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
-    bottom: -50px;
-  }
